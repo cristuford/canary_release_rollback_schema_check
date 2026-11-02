@@ -1,11 +1,11 @@
-# trainplat_jd257
+# canary_release_rollback_schema_check
 
 **校验大模型训练平台工程师·灰度发布与版本回滚的字段结构并列出缺失项。**
 
-`trainplat_jd257` —— 从样本里推断大模型训练平台工程师·灰度发布与版本回滚应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
+`canary_release_rollback_schema_check` —— 从样本里推断大模型训练平台工程师·灰度发布与版本回滚应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`trainplat_jd257.py` 拷走就能用
+- 单文件，`canary_release_rollback_schema_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install cristuford-trainplat_jd257
+pip install cristuford-canary_release_rollback_schema_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-trainplat_jd257 --help
+canary_release_rollback_schema_check --help
 ```
 
-也可以不用安装，直接把 `trainplat_jd257.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `canary_release_rollback_schema_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ trainplat_jd257 --help
 ## 用法
 
 ```bash
-python trainplat_jd257.py --file input.txt
-python trainplat_jd257.py --text "示例内容"
-python trainplat_jd257.py --file input.txt --json
+python canary_release_rollback_schema_check.py --file input.txt
+python canary_release_rollback_schema_check.py --text "示例内容"
+python canary_release_rollback_schema_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python trainplat_jd257.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_trainplat_jd257.py
+python test_canary_release_rollback_schema_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_trainplat_jd257.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/cristuford/trainplat_jd257>
+- GitHub 仓库：<https://github.com/cristuford/canary_release_rollback_schema_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_trainplat_jd257.py
 cristuford 做大模型训练平台工程师·灰度发布与版本回滚相关的问题，方向对标智谱AI的架构大模型训练平台工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://cristuford.github.io>
-- 仓库：<https://github.com/cristuford/trainplat_jd257>
+- 仓库：<https://github.com/cristuford/canary_release_rollback_schema_check>
 
 ## 许可
 
